@@ -11,7 +11,7 @@ import re
 from typing import Union
 from pprint import pprint
 
- 
+
 use = hub.load("https://www.kaggle.com/models/google/universal-sentence-encoder/frameworks/TensorFlow2/variations/universal-sentence-encoder/versions/2")
 tf.experimental.numpy.experimental_enable_numpy_behavior()
 nltk.download('stopwords')    
@@ -82,7 +82,7 @@ import spacy
 from spacy.pipeline import EntityRuler
 from spacy.lang.en import English
 from spacy.tokens import Doc
-  
+
 nlp = spacy.load("en_core_web_lg")
 skill_pattern_path = "jz_skill_patterns.jsonl"
 

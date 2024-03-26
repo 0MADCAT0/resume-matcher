@@ -4,6 +4,7 @@ import os
 
 os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
 
+
 def main():
     tab1, tab2, tab3 = st.tabs(["Home", "Score", "About"])
     with tab1:
@@ -28,9 +29,11 @@ def main():
         if text1 and text2:
             cosine = compute_cosine_similarity(text1, text2)
             compare = compare_words(text1, text2)
+            spacy_match = match_resume(text1, text2)
             st.write(f"**Similarity of CV and Job Description:** %{round(cosine, 2)}")  
             st.write(f"**The CV and Job Description have** %{round(compare, 2)} **words in common.**") 
-    
+            st.write(f"**The current Resume is {spacy_match}% matched to your requirements**") 
+            
     with tab3:
         st.title("About")
         st.write("This is a resume matcher app. It can compare resumes and job descriptions to give a similarity score.")
@@ -62,4 +65,5 @@ def process_file_upload(file_label):
     return None
 
 if __name__ == "__main__":
+    nerer()
     main()
