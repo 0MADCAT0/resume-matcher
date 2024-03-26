@@ -65,5 +65,4 @@ def process_file_upload(file_label):
     return None
 
 if __name__ == "__main__":
-    nerer()
     main()
