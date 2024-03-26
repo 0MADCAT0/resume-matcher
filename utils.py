@@ -14,7 +14,8 @@ from pprint import pprint
 
 use = hub.load("https://www.kaggle.com/models/google/universal-sentence-encoder/frameworks/TensorFlow2/variations/universal-sentence-encoder/versions/2")
 tf.experimental.numpy.experimental_enable_numpy_behavior()
-nltk.download('stopwords')    
+nltk.download('stopwords') 
+nltk.download('wordnet')   
 
 def read_pdf(file: Union[str, bytes]) -> str:
     """Extract text from the given PDF file."""
