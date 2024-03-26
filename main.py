@@ -40,12 +40,12 @@ def main():
         st.write("It uses the LLM model embedings of the documents.")
         st.write("The app is built using Streamlit and Python.")
         st.write("The app is deployed on Streamlit Cloud.")
-        st.write(f"""The app is developed by CodeCat Team.
+        st.write(f"""The app is developed by AI-run Team.
                  \nTeam Memebers:\n
                  \nPhd Emine İldes Eğri\n
                  \nMBA Orhan Bulut\n
-                 \nEng. Hüseyin Işık\n
-                 \nMsc Serdar Çağlar""")
+                 \nEng. Hüseyin Işık
+                 """)
 
     
 
