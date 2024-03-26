@@ -93,13 +93,13 @@ nlp.pipe_names
 
 def get_skills(text):
     doc = nlp(text)
-    myset = []
+    # myset = []
     subset = []
     for ent in doc.ents:
         if ent.label_ == "SKILL":
             subset.append(ent.text)
-    myset.append(subset)
-    pprint(myset)
+    # myset.append(subset)
+    # pprint(myset)
     return set(subset)
 
 
@@ -133,7 +133,6 @@ def match_resume(input_resume, input_skills):
     match = round(score / req_skills_len * 100, 1)
     return match
 
-    # print(f"The current Resume is {match}% matched to your requirements")
 
 
 
