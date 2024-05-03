@@ -6,7 +6,7 @@ The app is built using Streamlit and Python.
 
 The app is deployed on Streamlit Cloud.
 
-The app is developed by CodeCat Team.
+The app is developed by MadCatAI Team.
 
 Team Memebers:
 

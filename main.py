@@ -44,7 +44,8 @@ def main():
                  \nTeam Memebers:\n
                  \nPhd Emine İldes Eğri\n
                  \nMBA Orhan Bulut\n
-                 \nEng. Hüseyin Işık
+                 \nEng. Hüseyin Işık\n
+                 \nMsc Serdar Çağlar
                  """)
 
     
